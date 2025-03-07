@@ -40,6 +40,7 @@ const db = knex({
   client: env.DB_CLIENT,
   connection: async () => {
     const baseConfig = {
+      filename: env.DB_FILENAME,
       host: env.DB_HOST,
       port: env.DB_PORT,
       database: env.DB_NAME,
