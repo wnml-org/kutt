@@ -36,6 +36,7 @@ const spec = {
   DB_CLIENT: str({ choices: supportedDBClients, default: "better-sqlite3" }),
   DB_FILENAME: str({ default: "db/data" }),
   DB_HOST: str({ default: "localhost" }),
+  DB_IAM_REGION: str({ default: "" }),
   DB_PORT: num({ default: 5432 }),
   DB_NAME: str({ default: "kutt" }),
   DB_USER: str({ default: "postgres" }),
