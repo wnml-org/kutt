@@ -41,6 +41,7 @@ const spec = {
   DB_USER: str({ default: "postgres" }),
   DB_PASSWORD: str({ default: "" }),
   DB_SSL: bool({ default: false }),
+  DB_SSL_CA_PATH: str({ default: "" }),
   DB_POOL_MIN: num({ default: 0 }),
   DB_POOL_MAX: num({ default: 10 }),
   DB_USE_IAM: bool({ default: false }),
