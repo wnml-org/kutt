@@ -16,7 +16,10 @@ RUN --mount=type=bind,source=package.json,target=package.json \
 RUN mkdir -p /var/lib/kutt
 
 # install curl for healthcheck
-RUN apk add --no-cache curl
+RUN apk add --no-cache \
+    curl \
+    bash \
+    jq
 RUN curl --version
 
 # copy the rest of source files into the image

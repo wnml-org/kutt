@@ -10,5 +10,5 @@ echo "Current Availability Zone: $AZ"
 export MAIL_HOST="${SMTP_HOSTNAME}.${AZ}.${WORKSPACE}.${DOMAIN}"
 export HTTP_PROXY="http://${PROXY_HOSTNAME}.${AZ}.${WORKSPACE}.${DOMAIN}:${PROXY_PORT}"
 
-echo "SMTP_HOST: $SMTP_HOST"
+echo "SMTP_HOST: $MAIL_HOST"
 echo "HTTP_PROXY: $HTTP_PROXY"
